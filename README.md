@@ -3,7 +3,7 @@
 Detect environment configuration drift before it breaks your application.
 
 ```bash
-npx env-drift
+npx @sudip_18/env-drift
 ```
 
 ```text
@@ -28,19 +28,19 @@ Drift detected.
 ## Installation
 
 ```bash
-npm install --save-dev env-drift
+npm install --save-dev @sudip_18/env-drift
 ```
 
 ## Usage
 
-Run from the project root. `env-drift` uses `.env.example` as the reference file and recursively scans supported source files.
+Run from the project root. After installation, the `env-drift` command uses `.env.example` as the reference file and recursively scans supported source files.
 
 ```bash
-npx env-drift
-npx env-drift --env-file .env.development
-npx env-drift --path ./src
-npx env-drift --json
-npx env-drift --ci
+npx @sudip_18/env-drift
+npx @sudip_18/env-drift --env-file .env.development
+npx @sudip_18/env-drift --path ./src
+npx @sudip_18/env-drift --json
+npx @sudip_18/env-drift --ci
 ```
 
 Exit codes are `0` for no drift, `1` for detected drift, and `2` for invalid input or a tool error.

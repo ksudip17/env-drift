@@ -1,5 +1,5 @@
 {
-  "name": "env-drift",
+  "name": "@sudip_18/env-drift",
   "version": "0.1.0",
   "description": "Detect environment configuration drift in JavaScript and TypeScript projects.",
   "type": "module",
@@ -44,5 +44,8 @@
   "devDependencies": {
     "@types/node": "^22.10.5",
     "tsx": "^4.19.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
