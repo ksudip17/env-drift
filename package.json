@@ -1,0 +1,48 @@
+{
+  "name": "env-drift",
+  "version": "0.1.0",
+  "description": "Detect environment configuration drift in JavaScript and TypeScript projects.",
+  "type": "module",
+  "bin": {
+    "env-drift": "dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "environment",
+    "env",
+    "dotenv",
+    "typescript",
+    "developer-tools",
+    "cli",
+    "configuration"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "npm run typecheck",
+    "test": "tsx --test tests/*.test.ts",
+    "prepack": "npm run build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2"
+  }
+}
